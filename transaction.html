@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page.css">
+    <title>DASHBOARD</title>
+    <link rel="icon" href="images/logo.PNG">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <img src="images/logo.PNG">
+                </div>
+                <div class="company">
+                    <h2>Bandale Marine
+                        and Industrial<br>
+                        Corporation</h2>
+                </div>
+            </div>
+            <div class="content">
+                <hr>
+                <br>
+                <a href="dashboard.html"><h3>DASHBOARD</h3></a>
+                <a href="https://docs.google.com/spreadsheets/d/11x642NDAwfS9Og-47HpTZFNhaHVZ1Q_fVxDVVVfIHNc/edit#gid=1326870818"><h3>INVENTORY</h3></a>
+                <a href="transaction.html"><h3>TRANSACTION</h3></a>
+                <a href=""><h3>REPORTS</h3></a>
+                <a href="index.html"><h3>LOGOUT</h3></a>
+            </div>
+        </div>    
+        <div class="main-panel">
+            <div class="main-panel-header">
+                <div class="title">
+                    <h2>TRANSACTION</h2>
+                </div>
+            </div>
+            <div class="main-content-container">
+                <div class="main-content">
+                    <form name="transaction">
+                        <h2>TRANSACTION FORM</h2>
+                        <div class="column2">
+                            <div class="form-control">
+                                <div id="error-branch" class="error"></div>
+                                <div class="column2">
+                                    <label>BRANCH:</label>
+                                    <select name="branch" name="branch" class="branch" id="branch">
+                                        <option value="">select</option>
+                                        <option value="cebu">CEBU</option>
+                                        <option value="gensan">GENSAN</option>
+                                    </select>  
+                                </div>          
+                            </div>
+                        </div>
+                        <div class="column2">
+                            <div class="form-control">
+                                <div id="error-itemid" class="error"></div>
+                                <div class="column2">
+                                    <label>ITEM ID:</label>
+                                    <input type="text" name="itemid" class="itemid" id="itemid">
+                                </div>
+                            </div>    
+                            <div class="form-control">
+                                <div id="error-stock" class="error"></div>
+                                <div class="column2">
+                                    <label>AVAILABLE STOCK:</label>
+                                    <input type="text" name="stock">
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="column2">
+                            <div class="form-control">
+                                <div id="error-itemname" class="error"></div>
+                                <div class="column2">
+                                    <label>ITEM NAME:</label>
+                                    <input type="text" name="itemname" class="itemname">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column2">
+                            <div class="form-control">
+                                <div id="error-mode" class="error"></div>
+                                <div class="column2">
+                                    <label style="font-size: 15px;">MODE OF TRANSACTION:</label>
+                                    <select name="mode" class="mode">
+                                        <option value="">select</option>
+                                        <option value="sold">SOLD</option>
+                                        <option value="trans-in">TRANS-IN</option>
+                                        <option value="trans-out">TRANS-OUT</option>
+                                        <option value="returned">RETURNED</option>
+                                        <option value="re-deliver">RE-DELIVER</option>
+                                    </select>
+                                </div>     
+                            </div>           
+                        </div>
+                        <div class="column2">
+                            <div class="form-control">
+                                <div id="error-date" class="error"></div>
+                                <div class="column2">
+                                    <label>DATE:</label>
+                                    <input type="date" name="date" class="date">
+                                </div>
+                            </div>
+                            <div class="form-control">
+                                <div id="error-quantity" class="error"></div>
+                                <div class="column2">
+                                    <label>QUANTITY:</label>
+                                    <input type="text" name="quantity">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column2">
+                            <div class="form-control">
+                                <div id="error-purchaseorder" class="error"></div>
+                                <div class="column2">
+                                    <label>PURCHASE ORDER #:</label>
+                                    <input type="text" name="purchaseorder">
+                                </div>
+                            </div>
+                            <div class="form-control">
+                                <div id="error-salesinvoice" class="error"></div>
+                                <div class="column2">
+                                    <label>SALES INVOICE #:</label>
+                                    <input type="text" name="salesinvoice">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column2">
+                            <div class="form-control">
+                                <div id="error-customername" class="error"></div>
+                                <div class="column2">
+                                    <label>CUSTOMER NAME #:</label>
+                                    <input type="text" name="customername" class="customername">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column2">
+                            <div class="form-control">
+                                <div id="error-delivery" class="error"></div>
+                                <div class="column2">
+                                    <label>DELIVERY #:</label>
+                                    <input type="text" name="delivery">
+                                </div>
+                            </div>
+                            <div class="form-control">
+                                <div id="error-file" class="error"></div>
+                                <div>
+                                    <label>Attach File:</label>
+                                    <input type="file" name="file">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column2">
+                            <div class="form-control">
+                                <div id="error-delivery" class="error"></div>
+                                <div class="column2">
+                                    <label>ADD MISC. DETAILS:</label>
+                                    <div>
+                                    <label>Yes</label>
+                                    <input type="radio" name="verify" onclick="showMiscellaneous()" value="yes">
+                                    <label>No</label>
+                                    <input type="radio" name="verify" onclick="hideMiscellaneous()" value="no">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-control">
+                                <div class="button">
+                                    <button type="submit" name="submitBtn" class="submit">Submit</button>
+                                    <button type="reset" name="resetBtn" class="reset">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="miscellaneousform">
+                            <h3>MISCELLANEOUS DETAILS</h3>
+                            <div class="column2">
+                                <div class="form-control">
+                                    <div id="error-lot" class="error"></div>                 
+                                    <div class="column2">
+                                        <label>LOT #:</label>
+                                        <input type="text" name="lot">
+                                    </div>
+                                </div>
+                                <div class="form-control">
+                                    <div id="error-expirationdate" class="error"></div>           
+                                    <div class="column2">
+                                        <label>EXPIRATION DATE:</label>
+                                        <input type="date" name="expirationdate" class="date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column2">
+                                <div class="form-control">
+                                    <div id="error-batch" class="error"></div>                 
+                                    <div class="column2">
+                                        <label>BATCH #:</label>
+                                        <input type="text" name="batch">
+                                    </div>
+                                </div>
+                                <div class="form-control">
+                                    <div id="error-serial" class="error"></div>                 
+                                    <div class="column2">
+                                        <label>SERIAL #:</label>
+                                        <input type="text" name="serial">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column2">
+                                <div class="form-control">
+                                    <div id="error-withdrawal" class="error"></div>                 
+                                    <div class="column2">
+                                        <label>WITHDRAWAL #:</label>
+                                        <input type="text" name="withdrawal">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column2">
+                                <div class="form-control">
+                                    <div id="error-remarks" class="error"></div>
+                                    <div  class="column2">
+                                        <label>REMARKS #:</label>
+                                        <input type="text" name="remarks" class="remarks">
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                    </form>
+                
+                    <script>
+                        const form = document.forms.transaction;
+                        const branch =form.branch
+                        const itemid =form.itemid
+                        const stock =form.stock
+                        const itemname =form.itemname
+                        const mode =form.mode
+                        const date =form.date
+                        const quantity =form.quantity
+                        const purchaseorder =form.purchaseorder
+                        const salesinvoice =form.salesinvoice
+                        const customername =form.customername
+                        const delivery =form.delivery
+                        const file =form.file
+                        const lot =form.lot
+                        const expirationdate =form.expirationdate
+                        const batch =form.batch
+                        const serial =form.serial
+                        const withdrawal =form.withdrawal
+                        const remarks =form.remarks
+                
+                        form.addEventListener('submit', function(event){
+                            event.preventDefault();
+                            
+                            if(!branch.value){
+                                setError(branch, 'Branch is required')
+                            }
+                            if(!itemid.value){
+                                setError(itemid, 'Item ID is required')
+                            }
+                            if(!stock.value){
+                                setError(stock, 'Available Stock is required')
+                            }
+                            if(!itemname.value){
+                                setError(itemname, 'Item Name is required')
+                            }
+                            if(!mode.value){
+                                setError(mode, 'Mode of Transaction is required')
+                            }
+                            if(!date.value){
+                                setError(date, 'Date is required')
+                            }
+                            if(!quantity.value){
+                                setError(quantity, 'Quantity is required')
+                            }
+                            if(!purchaseorder.value){
+                                setError(purchaseorder, 'Purchase Order # is required')
+                            }
+                            if(!salesinvoice.value){
+                                setError(salesinvoice, 'Sales Invoice # is required')
+                            }
+                            if(!customername.value){
+                                setError(customername, 'Customer Name is required')
+                            }
+                            if(!delivery.value){
+                                setError(delivery, 'Delivery # is required')
+                            }
+                            if(!file.value){
+                                setError(file, 'File is required')
+                            }
+                        })
+                
+                        form.addEventListener('reset', function(event){
+                            event.preventDefault();
+                
+                            document.getElementById('branch').innerText = "";
+                            document.getElementById('itemid').innerText = "";
+                
+                            // clear(branch);
+                            // clear(itemid)
+                
+                        //     clear(field){
+                        //     document.getElementById(`error-${field}`).innerText = "";
+                        // }
+                        })
+                
+                        function setError(field, errorMsg){
+                            field.style.bordercolor='red';
+                            document.getElementById('error-' + field.name).innerText = errorMsg;
+                        }
+                        function showMiscellaneous(){
+                            document.getElementById('miscellaneousform').style.display='inline';
+                        }
+                        function hideMiscellaneous(){
+                            document.getElementById('miscellaneousform').style.display='none';
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/logo.PNG">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2><br>
+        <form name="login">
+            <div class="form-control">
+                <div>
+                    <div id="error-message"></div>
+                    <label>Email:</label>
+                    <div id="error-email"></div>
+                    <input type="email" name="email" id="email" placeholder="Type your Email" class="box">
+                </div>
+            </div>
+            <br>
+            <div class="form-control">
+                <div>
+                    <label>Password:</label>
+                    <div id="error-password"></div>
+                    <input type="password" name="password" id="password" placeholder="Type your Password" class="box">
+                </div>
+                <div class="checkbox">
+                    Show Password
+                    <input type="checkbox" onclick="show()" class="smallbox">
+                </div>
+            </div>
+            <br>
+            <div class="form-control">
+                <div class="button">
+                    <div class="button1">
+                        <button type="submit" class="loginBtn" name="loginButton">Login</button>
+                    </div>
+                    <div class="button2">
+                        <button type="reset" class="clearBtn" name="clearButton">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const form = document.forms.login;
+        const email = form.email;
+        const password = form.password;
+
+        form.addEventListener('submit', function(event){
+            event.preventDefault();
+
+            if(email.value == "" || email.value == null){
+                setError(email, 'Email is required')
+            }
+            if(password.value == "" || password.value == null){
+                setError(password, 'Password is required')
+            }
+            if(email.value == 'jimfalar@gmail.com' && password.value == '1234'){
+                window.location.assign("dashboard.html")
+            }
+            else{
+                document.getElementById('error-message').innerText = 'Email and Password did not match'
+                document.getElementById('error-message').style.color = 'red'
+            }
+        })
+
+        form.addEventListener('reset', function(event){
+            event.preventDefault();
+            document.getElementById('error-message').innerText = '';
+            document.getElementById('email').value = '';
+            document.getElementById('password').value = '';
+            document.getElementById('error-email').innerText = '';
+            document.getElementById('error-password').innerText = '';
+        })
+
+        function setError(field, errorMsg){
+            document.getElementById('error-' + field.name).innerText = errorMsg;
+            document.getElementById('error-' + field.name).style.color = 'red'
+        }
+
+        function show(){
+            var input = document.getElementById('password');
+            if(input.type === 'password'){
+                input.type = 'text'}
+            else{
+                input.type = 'password'
+            }
+        }
+
+    </script>
+</body>
+</html>
