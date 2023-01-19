@@ -164,7 +164,8 @@ h3{
     border-bottom: 3px solid black;}
 
 .mobile-logo{
-    grid-column: 1/2;}
+    grid-column: 1/2;
+    margin-left: 10px;}
 
 .mobile-company{
     grid-column: 2/3;
@@ -194,7 +195,7 @@ p{
     align-items: center;}
 
 .mobile-main-content-container{
-    height: auto;
+    height: 100vh;
     margin: 30px;
     border: 3px solid black;
     background-color: white;
@@ -210,14 +211,39 @@ p{
     margin: 0px;
 }
 
+#miscellaneousform2{
+    display: none;}
+
 .column1{
     width: 270px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 10px 0px ;
 }
 
-@media only screen and (max-width: 700px){
+.button2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit2{
+    background-color: green;
+    width: 130px;
+    height: 30px;
+    font-size: large;
+    font-weight: bold;
+    color: white;}
+
+.reset2{
+    background-color: red;
+    width: 130px;
+    height: 30px;
+    font-size: large;
+    font-weight: bold;
+    color: white;}
+
+@media only screen and (max-width: 1200px){
     .mobile{
         display: flex;
     }

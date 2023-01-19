@@ -268,7 +268,7 @@
                                     <div id="error-branch" class="error"></div>
                                     <div class="column1">
                                         <label>BRANCH:</label>
-                                        <select name="branch" name="branch" class="branch" id="branch">
+                                        <select name="branch" name="branch" class="select" id="branch">
                                             <option value="">select</option>
                                             <option value="cebu">CEBU</option>
                                             <option value="gensan">GENSAN</option>
@@ -281,14 +281,14 @@
                                     <div id="error-itemid" class="error"></div>
                                     <div class="column1">
                                         <label>ITEM ID:</label>
-                                        <input type="text" name="itemid" class="itemid" id="itemid">
+                                        <input type="text" name="itemid" class="text" id="itemid">
                                     </div>
                                 </div>    
                                 <div class="mobile-form-control">
                                     <div id="error-stock" class="error"></div>
                                     <div class="column1">
                                         <label>AVAILABLE STOCK:</label>
-                                        <input type="text" name="stock">
+                                        <input type="text" name="stock" class="text">
                                     </div>
                                 </div>
                             </div>    
@@ -297,7 +297,7 @@
                                     <div id="error-itemname" class="error"></div>
                                     <div class="column1">
                                         <label>ITEM NAME:</label>
-                                        <input type="text" name="itemname" class="itemname">
+                                        <input type="text" name="itemname" class="text">
                                     </div>
                                 </div>
                             </div>
@@ -306,7 +306,7 @@
                                     <div id="error-mode" class="error"></div>
                                     <div class="column1">
                                         <label style="font-size: 15px;">MODE OF TRANSACTION:</label>
-                                        <select name="mode" class="mode">
+                                        <select name="mode" class="select">
                                             <option value="">select</option>
                                             <option value="sold">SOLD</option>
                                             <option value="trans-in">TRANS-IN</option>
@@ -322,14 +322,14 @@
                                     <div id="error-date" class="error"></div>
                                     <div class="column1">
                                         <label>DATE:</label>
-                                        <input type="date" name="date" class="date">
+                                        <input type="date" name="date" class="date2">
                                     </div>
                                 </div>
                                 <div class="mobile-form-control">
                                     <div id="error-quantity" class="error"></div>
                                     <div class="column1">
                                         <label>QUANTITY:</label>
-                                        <input type="text" name="quantity">
+                                        <input type="text" name="quantity" class="text">
                                     </div>
                                 </div>
                             </div>
@@ -338,14 +338,14 @@
                                     <div id="error-purchaseorder" class="error"></div>
                                     <div class="column1">
                                         <label>PURCHASE ORDER #:</label>
-                                        <input type="text" name="purchaseorder">
+                                        <input type="text" name="purchaseorder" class="text">
                                     </div>
                                 </div>
                                 <div class="mobile-form-control">
                                     <div id="error-salesinvoice" class="error"></div>
                                     <div class="column1">
                                         <label>SALES INVOICE #:</label>
-                                        <input type="text" name="salesinvoice">
+                                        <input type="text" name="salesinvoice" class="text">
                                     </div>
                                 </div>
                             </div>
@@ -354,7 +354,7 @@
                                     <div id="error-customername" class="error"></div>
                                     <div class="column1">
                                         <label>CUSTOMER NAME #:</label>
-                                        <input type="text" name="customername" class="customername">
+                                        <input type="text" name="customername" class="text">
                                     </div>
                                 </div>
                             </div>
@@ -363,21 +363,21 @@
                                     <div id="error-delivery" class="error"></div>
                                     <div class="column1">
                                         <label>DELIVERY #:</label>
-                                        <input type="text" name="delivery">
+                                        <input type="text" name="delivery" class="text">
                                     </div>
                                 </div>
                                 <div class="mobile-form-control">
                                     <div id="error-file" class="error"></div>
                                     <div class="column1">
                                         <label>Attach File:</label>
-                                        <input type="file" name="file">
+                                        <input type="file" name="file" class="file">
                                     </div>
                                 </div>
                             </div>
                             <div>
                                 <div class="mobile-form-control">
                                     <div id="error-delivery" class="error"></div>
-                                    <div class="column1">
+                                    <div style="display: flex; justify-content: space-between;">
                                         <label>ADD MISC. DETAILS:</label>
                                         <div>
                                         <label>Yes</label>
@@ -387,66 +387,65 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mobile-form-control">
-                                    <div class="button">
-                                        <button type="submit" name="submitBtn" class="submit">Submit</button>
-                                        <button type="reset" name="resetBtn" class="reset">Reset</button>
-                                    </div>
-                                </div>
                             </div>
-                            <div id="miscellaneousform">
+                            <div id="miscellaneousform2">
                                 <h3>MISCELLANEOUS DETAILS</h3>
-                                <div class="column2">
+                                <div>
                                     <div class="mobile-form-control">
                                         <div id="error-lot" class="error"></div>                 
-                                        <div class="column2">
+                                        <div class="column1">
                                             <label>LOT #:</label>
-                                            <input type="text" name="lot">
+                                            <input type="text" name="lot" class="text">
                                         </div>
                                     </div>
                                     <div class="mobile-form-control">
                                         <div id="error-expirationdate" class="error"></div>           
-                                        <div class="column2">
+                                        <div class="column1">
                                             <label>EXPIRATION DATE:</label>
-                                            <input type="date" name="expirationdate" class="date">
+                                            <input type="date" name="expirationdate" class="date2">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="column2">
+                                <div>
                                     <div class="mobile-form-control">
                                         <div id="error-batch" class="error"></div>                 
-                                        <div class="column2">
+                                        <div class="column1">
                                             <label>BATCH #:</label>
-                                            <input type="text" name="batch">
+                                            <input type="text" name="batch" class="text">
                                         </div>
                                     </div>
                                     <div class="mobile-form-control">
                                         <div id="error-serial" class="error"></div>                 
-                                        <div class="column2">
+                                        <div class="column1">
                                             <label>SERIAL #:</label>
-                                            <input type="text" name="serial">
+                                            <input type="text" name="serial" class="text">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="column2">
+                                <div>
                                     <div class="mobile-form-control">
                                         <div id="error-withdrawal" class="error"></div>                 
-                                        <div class="column2">
+                                        <div class="column1">
                                             <label>WITHDRAWAL #:</label>
-                                            <input type="text" name="withdrawal">
+                                            <input type="text" name="withdrawal" class="text">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="column2">
+                                <div">
                                     <div class="mobile-form-control">
                                         <div id="error-remarks" class="error"></div>
-                                        <div  class="column2">
+                                        <div  class="column1">
                                             <label>REMARKS #:</label>
-                                            <input type="text" name="remarks" class="remarks">
+                                            <input type="text" name="remarks" class="text">
                                         </div>
                                     </div>
                                 </div>
-                    
+                            </div>
+                            <div class="mobile-form-control">
+                                <div class="button2">
+                                    <button type="submit" name="submitBtn" class="submit2">Submit</button>
+                                    <button type="reset" name="resetBtn" class="reset2">Reset</button>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -537,8 +536,14 @@
         function showMiscellaneous(){
             document.getElementById('miscellaneousform').style.display='inline';
         }
+        function showMiscellaneous2(){
+            document.getElementById('miscellaneousform2').style.display='inline';
+        }
         function hideMiscellaneous(){
             document.getElementById('miscellaneousform').style.display='none';
+        }
+        function hideMiscellaneous2(){
+            document.getElementById('miscellaneousform2').style.display='none';
         }
     </script>
 </body>
