@@ -1,15 +1,13 @@
 *{
     margin: 0px;
-    padding: 0px;
-}
+    padding: 0px;}
 
 .container{
     height: 100vh;
     width: 100%;
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 100%;
-}
+    grid-template-rows: 100%;}
 
 .sidebar{
     grid-column: 1/2;
@@ -18,8 +16,7 @@
     grid-template-columns: 100%;
     grid-template-rows: 10% 90%;
     background-color: azure;
-    border: 3px solid black;
-}
+    border: 3px solid black;}
 
 .main-panel{
     grid-column: 2/3;
@@ -30,8 +27,7 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 10% 90%;
-    padding-top: 0px;
-}
+    padding-top: 0px;}
 
 .sidebar-header{
     grid-row: 1/2;
@@ -40,8 +36,7 @@
     display: grid;
     grid-template-columns: 30% 70%;
     padding: 20px;
-    margin-bottom: 20px;
-}
+    margin-bottom: 20px;}
 
 .main-panel-header{
     grid-row: 1/2;
@@ -49,19 +44,16 @@
     height: 50px;
     padding: 20px;
     display: flex;
-    align-items: center;
-}
+    align-items: center;}
 
 .logo{
     grid-column: 1/2;
     display: flex;
-    align-items: center;
-}
+    align-items: center;}
 
 img{
     height: 100%;
-    width: 100%;
-}
+    width: 100%;}
 
 .company{
     grid-column: 2/3;
@@ -69,38 +61,30 @@ img{
     display: flex;
     align-items: center;
     margin-left: 10px;
-    margin-top: 10px;
-}
+    margin-top: 10px;}
 
 hr{
     border: 2px solid blacK;
-    margin-top: 25px;
-}
+    margin-top: 25px;}
 
 .title{
     display: flex;
-    align-items: center;
-}
+    align-items: center;}
 
 .content{
     grid-column: 1/2;
     grid-row: 2/3;
     padding: 20px;
-    padding-top: 0px;
-}
+    padding-top: 0px;}
 
 a{
-    text-decoration: none;
-}
+    text-decoration: none;}
 
-a:visited,
-a:link{
-    color: black;
-}
+a:visited, a:link{
+    color: black;}
 
 h3{
-    padding: 20px 0px;
-}
+    padding: 20px 0px;}
 
 .main-content-container{
     grid-column: 1/2;
@@ -109,9 +93,7 @@ h3{
     border: 3px solid black;
     background-color: white;
     margin-top: 0px;
-    padding: 30px;
-}
-
+    padding: 30px;}
 
 form{
     width: 750px;
@@ -121,44 +103,35 @@ form{
     margin: auto;
     border: 5px solid black;
     border-radius: 50px 50px;
-    padding: 20px;
-}
+    padding: 20px;}
 
 .form-control, h1, h3{
     margin-bottom: 10px;
-    margin-left: 20px;
-}
+    margin-left: 20px;}
 
 .error{
     display: flex;
     flex-direction: row-reverse;
-    color: red;
-}
+    color: red;}
 
 #miscellaneousform{
-    display: none;
-}
+    display: none;}
 
 .column2{
     display: grid;
-    grid-template-columns: 50% 50%;
-}
+    grid-template-columns: 50% 50%;}
 
 .itemname, .remarks, .customername{
-    width: 545px;
-}
+    width: 545px;}
 
 .date{
-    width: 174px;
-}
+    width: 174px;}
 
 .itemid{
-    width: 171px;
-}
+    width: 171px;}
 
 .branch, .mode{
-    width: 178px;
-}
+    width: 178px;}
 
 .submit{
     background-color: green;
@@ -166,8 +139,7 @@ form{
     height: 30px;
     font-size: large;
     font-weight: bold;
-    color: white;
-}
+    color: white;}
 
 .reset{
     background-color: red;
@@ -175,5 +147,76 @@ form{
     height: 30px;
     font-size: large;
     font-weight: bold;
-    color: white;
+    color: white;}
+
+.mobile{
+    display: none;
+    justify-content: center;}
+
+.mobile-container{
+    height: auto;
+    width: 360px;}
+
+.mobile-sidebar{
+    background-color: azure;
+    border: 3px solid black;}
+
+.mobile-sidebar-header{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border-bottom: 3px solid black;
+}
+
+.mobile-logo{
+    grid-column: 1/2;
+}
+
+.mobile-company{
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+    
+.mobile-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+p{
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.mobile-content{
+    }
+
+.mobile-main-panel{
+    background-color: beige;
+    height: auto;
+    width: 100%;
+    padding-top: 0px;}
+
+.mobile-main-panel-header{
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;}
+
+.mobile-main-content-container{
+    height: 500px;
+    margin: 30px;
+    border: 3px solid black;
+    background-color: white;
+    margin: 0px 20px 0px 20px;
+    padding: 30px;}
+
+@media only screen and (max-width: 700px){
+    .mobile{
+        display: flex;
+    }
+    .pc{
+        display: none;
+    }
 }
