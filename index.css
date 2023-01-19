@@ -14,7 +14,7 @@ body{
 
 .container{
     height: 300px;
-    width: 300px;
+    width: 250px;
     border: 5px solid black;
     border-radius: 50px;
     padding: 40px;
@@ -22,7 +22,7 @@ body{
 
 .box{
     height: 25px;
-    width: 300px;
+    width: 250px;
 }
 
 label{
